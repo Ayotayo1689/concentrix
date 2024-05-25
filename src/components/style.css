@@ -1,0 +1,20 @@
+/* .background{
+    background: rgb(2,0,36);
+background: linear-gradient(185deg, rgba(0, 35, 36, 0.808) 0%, rgba(3, 51, 63, 0.849) 0%, rgba(14, 33, 87, 0.801) 62%, rgba(1, 60, 71, 0.842) 68%);
+} */
+
+.background{
+    background: linear-gradient(210.4deg,#25e2cc, #003d5b);
+    display: flex;
+    justify-content: space-between;
+}
+.just{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.na{
+    background: #52fdf29d;
+}

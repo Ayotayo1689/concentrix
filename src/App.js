@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { ChakraProvider } from '@chakra-ui/react';
+import Career from './Pages/Career';
+import { Route, Routes } from 'react-router-dom';
+import Admin from './Pages/Admin';
+import Actions from './Pages/Actions';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChakraProvider>
+  <Routes>
+        
+        <Route
+          path="/"
+          element={
+              <Career />
+          }
+        />
+         <Route
+          path="/admin"
+          element={
+              <Admin />
+          }
+        />
+         <Route
+          path="/action"
+          element={
+              <Actions />
+          }
+        />
+        
+      </Routes>
+    </ChakraProvider>
   );
 }
 

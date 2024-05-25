@@ -1,0 +1,11 @@
+.input-placeholder::placeholder {
+    color: rgb(0, 26, 51);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    /* opacity: 1; */
+  }
+
+  jd{
+    background: #007ea0;
+  }
